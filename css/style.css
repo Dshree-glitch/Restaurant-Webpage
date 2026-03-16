@@ -1,0 +1,223 @@
+/* style1.css */
+
+/* 1. Global Reset */
+body { 
+    margin: 0; 
+    font-family: 'Georgia', serif; 
+    line-height: 1.6; 
+    background-color: #f7f3e8; 
+    color: #333333; 
+    scroll-behavior: smooth;
+}
+
+section { padding: 80px 20px; text-align: center; }
+.container { max-width: 1100px; margin: auto; }
+
+/* 2. Navigation */
+.navbar {
+    background-color: #3b2a1a; 
+    color: white;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 3px solid #b5833f; 
+}
+
+.logo { font-size: 26px; font-weight: bold; }
+
+.navbar a { 
+    color: #dcb06e; 
+    text-decoration: none; 
+    margin-left: 20px; 
+    font-weight: bold; 
+    transition: 0.3s;
+}
+
+.navbar a:hover { color: #ffffff; }
+
+/* 3. Hero Section */
+.hero {
+    background-color: #5c402b; 
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    color: #f7f3e8; 
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+}
+
+.hero h1 { font-size: 3.5rem; margin: 0; }
+
+.btn-primary {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 14px 30px;
+    background-color: #b5833f;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-primary:hover { 
+    background-color: #8e6240; 
+    transform: translateY(-3px); 
+}
+
+/* 4. About Section Enhancement */
+.about-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    text-align: left; 
+    margin-top: 40px;
+}
+
+.about-image img {
+    width: 450px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 15px 15px 0px #dcb06e; 
+}
+
+.about-text h2 {
+    margin-top: 0;
+    text-align: left;
+}
+
+.about-text p {
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.about-features {
+    display: flex;
+    gap: 20px;
+    font-weight: bold;
+    color: #8e6240;
+    font-size: 0.9rem;
+}
+
+/* 5. Menu Styling */
+.menu-category { margin-bottom: 50px; }
+
+.menu-category h2 { 
+    color: #8e6240; 
+    border-bottom: 1px solid #e0d0b0; 
+    display: inline-block; 
+    padding-bottom: 5px; 
+    margin-bottom: 30px; 
+}
+
+.menu-grid { 
+    display: flex; 
+    gap: 25px; 
+    justify-content: center; 
+    flex-wrap: wrap;
+}
+
+.card {
+    background: #fffdf9; 
+    width: 260px;
+    border-radius: 8px; 
+    overflow: hidden; 
+    border: 1px solid #e0d0b0;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(59, 42, 26, 0.2);
+}
+
+.menu-img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.card h3 { color: #6a492e; margin: 15px 10px 5px; }
+.card p { font-size: 0.9rem; padding: 0 15px; color: #555; }
+.price { color: #b5833f; font-weight: bold; padding-bottom: 20px; font-size: 1.1rem; }
+
+/* 6. Contact Form Section */
+.contact-form {
+    max-width: 600px;
+    margin: 40px auto 0 auto;
+    background: #fffdf9;
+    padding: 30px;
+    border-radius: 8px;
+    border: 1px solid #e0d0b0;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column; 
+    gap: 15px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.contact-form input, 
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #e0d0b0;
+    border-radius: 4px;
+    font-family: inherit;
+    box-sizing: border-box; 
+}
+
+.btn-submit {
+    background-color: #b5833f;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 1rem;
+}
+
+.btn-submit:hover {
+    background-color: #8e6240;
+}
+
+/* 7. Footer */
+.main-footer {
+    background-color: #3b2a1a;
+    color: #f7f3e8;
+    padding: 40px 0;
+    margin-top: 60px;
+    border-top: 4px solid #b5833f;
+}
+
+.footer-links { margin-top: 15px; }
+
+.footer-links a { 
+    color: #dcb06e; 
+    text-decoration: none; 
+    margin: 0 10px; 
+    font-size: 0.9rem; 
+}
+
+/* 8. Divider */
+hr.divider { 
+    width: 100px; 
+    border-top: 2px solid #b5833f; 
+    margin: 40px auto; 
+    border: none;
+    height: 2px;
+}
